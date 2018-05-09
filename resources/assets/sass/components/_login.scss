@@ -1,0 +1,29 @@
+.login {
+    max-width: 412px;
+    width: calc(100% - 40px);
+    padding: 36px;
+    margin: auto;
+    margin-bottom: 28px;
+    background-color: #fff;
+    box-shadow: 0 2px 3px rgba(0,0,0,.55);
+    border: 1px solid #818c94;
+    border: 1px solid rgba(0,0,0,.4);
+    min-width: 320px;
+    min-height: 364px;
+
+    &__main {}
+
+    &__header {}
+
+    &__body {
+        h3 {
+            display: block;
+            padding: 0;
+            margin: 16px 0;
+            font-size: 1.6em;
+            font-weight: 300;
+            line-height: 1;
+        }
+    }
+}
+

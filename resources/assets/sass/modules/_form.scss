@@ -1,0 +1,127 @@
+.fieldset {
+    margin-bottom: 16px;
+
+    &--right {
+        text-align: right;
+    }
+}
+
+.input {
+    display: block;
+
+    > input {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 6px 10px;
+        border: 1px solid $secondary-color;
+        height: 36px;
+        outline: none;
+        transition: border-color 0.4s ease;
+
+        &:focus {
+            border-color: $primary-color;
+            transition: border-color 0.4s ease;
+        }
+    }
+}
+
+.select {
+    display: block;
+
+    > select {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 6px 10px;
+        border: 1px solid $secondary-color;
+        height: 36px;
+        outline: none;
+        transition: border-color 0.4s ease;
+        background-color: #FFFFFF;
+
+        &:focus {
+            border-color: $primary-color;
+            transition: border-color 0.4s ease;
+        }
+
+        &:disabled {
+            background-color: #ecebe4;
+        }
+    }
+}
+
+.button {
+    display: inline-block;
+    min-width: 100px;
+    height: 36px;
+    padding: 0 12px;
+    margin: 0;
+    border: 1px solid transparent;
+    position: relative;
+    max-width: 100%;
+    line-height: 34px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+    touch-action: manipulation;
+    transition: background-color 0.4s ease, border-color 0.4s ease;
+    cursor: pointer;
+
+    &--default {
+        background-color: $primary-color; 
+        border: 1px solid $primary-color;
+        color: $third-color;
+
+        &:hover {
+            background-color: darken($primary-color, 10); 
+            border: 1px solid darken($primary-color, 10);
+        }
+    }
+
+    &--danger {
+        background-color: $fifth-color; 
+        border: 1px solid $fifth-color;
+        color: $third-color;
+
+        &:hover {
+            background-color: darken($fifth-color, 10); 
+            border: 1px solid darken($fifth-color, 10);
+        }
+    }
+
+    &--secondary {
+        background-color: $fourth-color; 
+        border: 1px solid $fourth-color;
+        color: $secondary-color;
+
+        &:hover {
+            background-color: darken($fourth-color, 10); 
+            border: 1px solid darken($fourth-color, 10);
+        }
+    }
+
+    &--full {
+        display: block;
+    }
+
+    &--margin-right {
+        margin-right: 10px;
+    }
+
+    &:hover {
+        transition: background-color 0.4s ease, border-color 0.4s ease;
+    }
+}
+
+.row {
+    display: flex;
+    margin: 0 -10px;
+}
+
+.col-6 {
+    flex: 1;
+    padding: 0 10px;
+}
